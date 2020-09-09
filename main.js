@@ -20,7 +20,16 @@ console.log(cheapItems);
 // 3. Show me to how find the item with a "GBP" currency code and print its name and price. Please `console.log` the one you find.
 
 const britishCurrency = items.filter(function(item) {
-  return item.currency_code == "GBP"
+  // return item.currency_code == "GBP"
+  return item.currency_code.includes("GBP");
 });
 
 britishCurrency.forEach(function(item){ console.log(`${item.title} costs £${item.price}`)});
+
+// 4. Show me how to find which items are made of wood. Please `console.log` the ones you find.
+
+const madeOfWood = items.filter(function(item) {
+  return item.materials.includes("wood")
+});
+
+console.log(madeOfWood);
