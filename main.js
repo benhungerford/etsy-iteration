@@ -41,3 +41,11 @@ const moreThanEight = items.filter(function(item) {
 });
 
 console.log(moreThanEight);
+
+// 6. Show me how to calculate how many items were made by their sellers. Please `console.log` your answer.
+
+const whoMade = items.filter(function(item) {
+  return item.who_made == "i_did";
+});
+
+console.log(`${whoMade.length} were made by their sellers`);
