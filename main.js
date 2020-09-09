@@ -17,4 +17,10 @@ const cheapItems = items.filter(function(item) {
 
 console.log(cheapItems);
 
-// 3. Show me how find the item with a "GBP" currency code and print its name and price. Please `console.log` the one you find.
+// 3. Show me to how find the item with a "GBP" currency code and print its name and price. Please `console.log` the one you find.
+
+const britishCurrency = items.filter(function(item) {
+  return item.currency_code == "GBP"
+});
+
+britishCurrency.forEach(function(item){ console.log(`${item.title} costs £${item.price}`)});
