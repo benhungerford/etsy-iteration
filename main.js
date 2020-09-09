@@ -33,3 +33,11 @@ const madeOfWood = items.filter(function(item) {
 });
 
 console.log(madeOfWood);
+
+// 5. Show me how to find which items are made of eight or more materials. Please `console.log` the ones you find.
+
+const moreThanEight = items.filter(function(item) {
+  return item.materials.length > 8;
+});
+
+console.log(moreThanEight);
