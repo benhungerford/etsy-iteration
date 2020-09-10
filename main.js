@@ -7,7 +7,7 @@ items.forEach(function(list) {
   prices.push(list.price);
 });
 const averagePrices = prices.reduce((a,b) => a + b, 0) / prices.length;
-console.log(averagePrices);
+console.log(`The average price is ${averagePrices}`);
 
 // 2. Show me how to get an array of items that cost between $14.00 and $18.00 USD. Please `console.log` the answer.
 
